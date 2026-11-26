@@ -7,6 +7,7 @@
       <stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/>
       <stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
     </linearGradient>
+    <path id="logo" fill-rule="evenodd" d="M40 14 Q45 22 50 22 Q55 22 60 14 Q64 24 72 26 Q84 29 94 40 Q80 42 66 48 Q58 52 53 58 L50 86 L47 58 Q42 52 34 48 Q20 42 6 40 Q16 29 28 26 Q36 24 40 14 Z M41.4 39 A8.6 8.6 0 1 0 58.6 39 A8.6 8.6 0 1 0 41.4 39 Z M46.6 39 A3.4 3.4 0 1 0 53.4 39 A3.4 3.4 0 1 0 46.6 39 Z"/>
   </defs>
   <g clip-path="url(#tile)">
     <!-- TILE COLOUR -->
@@ -16,9 +17,7 @@
           d="M88 32V480 M32 88H480 M144 32V480 M32 144H480 M200 32V480 M32 200H480 M256 32V480 M32 256H480 M312 32V480 M32 312H480 M368 32V480 M32 368H480 M424 32V480 M32 424H480"/>
     <rect x="32" y="32" width="448" height="448" fill="url(#light)"/>
   </g>
-  <!-- glyph: prompt chevron and cursor -->
-  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="44">
-    <path stroke="#000000" stroke-opacity="0.16" d="M146 188 L246 264 L146 340 M276 340 H366"/>
-    <path stroke="#ffffff" d="M146 180 L246 256 L146 332 M276 332 H366"/>
-  </g>
+  <!-- glyph: Chawpick logo (100x100 source, scaled 4.2x and centred) -->
+  <use href="#logo" fill="#000000" fill-opacity="0.16" transform="translate(46 54) scale(4.2)"/>
+  <use href="#logo" fill="#ffffff" transform="translate(46 46) scale(4.2)"/>
 </svg>
