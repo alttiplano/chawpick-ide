@@ -1,0 +1,14 @@
+[package]
+name = "app-ui"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[dependencies]
+eframe.workspace = true
+app-brand.workspace = true
+
+[lints]
+workspace = true
