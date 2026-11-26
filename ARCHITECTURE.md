@@ -49,7 +49,8 @@ chawpick-ide/
 ├── Cargo.lock                       # Exact dependency versions (committed)
 ├── Cargo.toml                       # Workspace: version, shared deps, lints, build profiles
 ├── clippy.toml                      # Code-checker settings
-├── LICENSE                          # MIT
+├── LICENSE-GPL                      # GPL-3.0-or-later: the IDE, default for every crate
+├── LICENSE-MIT                      # MIT: only crates whose Cargo.toml says license = "MIT"
 ├── NOTES.md                         # Commands you type by hand: run, checks, name/icon
 ├── README.md
 ├── rust-toolchain.toml              # Rust compiler: stable + rustfmt + clippy
@@ -82,3 +83,6 @@ A new feature means a new crate. A new program you install means a new app.
 8. **Never block the window.** Slow work runs on a background thread and reports back.
 9. **The app id ties the desktop together.** `MACHINE_NAME` is the Wayland app id, the `.desktop`
    file name and the icon file name. If they differ, the dock shows the raw id and a generic icon.
+10. **License per crate.** Every crate is GPL-3.0-or-later (`license.workspace = true`). A crate
+    meant for others to reuse may be MIT instead (`license = "MIT"` in its `Cargo.toml`): ask the
+    owner first.

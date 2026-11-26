@@ -7,7 +7,7 @@ members = ["apps/*", "crates/*"]
 version = "0.0.1"
 edition = "2024"
 rust-version = "1.95"
-license = "MIT"
+license = "GPL-3.0-or-later"
 repository = "https://github.com/alttiplano/chawpick-ide"
 
 # Shared dependency versions: declared once here, used with `name.workspace = true`.
