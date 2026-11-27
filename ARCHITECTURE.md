@@ -49,8 +49,8 @@ chawpick-ide/
 ├── Cargo.lock                       # Exact dependency versions (committed)
 ├── Cargo.toml                       # Workspace: version, shared deps, lints, build profiles
 ├── clippy.toml                      # Code-checker settings
+├── LICENSE                          # MIT: only crates whose Cargo.toml says license = "MIT"
 ├── LICENSE-GPL                      # GPL-3.0-or-later: the IDE, default for every crate
-├── LICENSE-MIT                      # MIT: only crates whose Cargo.toml says license = "MIT"
 ├── NOTES.md                         # Commands you type by hand: run, checks, name/icon
 ├── README.md
 ├── rust-toolchain.toml              # Rust compiler: stable + rustfmt + clippy

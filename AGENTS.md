@@ -39,4 +39,5 @@ Chawpick Ide: A desktop app built with Rust and egui. Stack: Rust + **egui/efram
 
 - Keep each change small; say which files to look at and what to run.
 - Ask before anything public or hard to undo: `git push`, tags, releases, installing system packages.
+- No AI attribution in commits or PRs: no `Co-Authored-By` trailer naming an AI, no "Generated with" line.
 - Reference projects are for ideas only. Never copy their code, names, icons or art.
