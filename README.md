@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="/home/zorin/Documents/Chawpick/chawpick-ide/public/github/logo.webp" alt="Image" width="200"/>
+<img src="https://raw.githubusercontent.com/alttiplano/chawpick-ide/refs/heads/main/public/github/logo.webp" alt="Image" width="180"/>
 
 <h1 align="center">Chawpick IDE</h1>
 
