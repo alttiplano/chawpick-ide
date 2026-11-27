@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/github/logo.svg" alt="Chawpick IDE" width="140"/>
+<a href="https://chawpick.com/ide"><img src="public/github/logo.svg" alt="Chawpick IDE" width="140"/></a>
 
 <h1 align="center">Chawpick IDE</h1>
 
