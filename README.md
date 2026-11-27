@@ -1,50 +1,29 @@
-# Chawpick Ide
+<div align="center">
 
-A desktop app built with Rust and egui.
+<img src="/home/zorin/Documents/Chawpick/chawpick-ide/public/github/logo.webp" alt="Image" width="200"/>
 
-Stack: Rust + [egui](https://github.com/emilk/egui) / eframe 0.37.
+<h1 align="center">Chawpick IDE</h1>
 
-## Run
+<p>
+  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/egui-0.37-2563eb?style=for-the-badge&labelColor=000000" alt="egui 0.37">
+  <img src="https://img.shields.io/badge/License-MIT%20%2F%20GPL--3.0-2563eb?style=for-the-badge&labelColor=000000" alt="License">
+</p>
 
-```sh
-cargo run
-```
+<p>
+  <a href="public/docs/README_ES.md">Español 🇪🇸</a> |
+  <a href="public/docs/README_ZH.md">中文 🇨🇳</a> |
+  <a href="public/docs/README_DE.md">Deutsch 🇩🇪</a> |
+  <a href="public/docs/README_FR.md">Français 🇫🇷</a> |
+  <a href="public/docs/README_JA.md">日本語 🇯🇵</a> |
+  <a href="public/docs/README_KO.md">한국어 🇰🇷</a> |
+  <a href="public/docs/README_PT.md">Português 🇧🇷</a> |
+  <a href="public/docs/README_RU.md">Русский 🇷🇺</a> |
+  <a href="public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="public/docs/README_HI.md">हिन्दी 🇮🇳</a> |
+  <a href="public/docs/README_AR.md">العربية 🇸🇦</a><span>...</span>
+</p>
 
-The first build downloads and compiles egui and takes a few minutes; later builds take seconds.
+</div>
 
-## Check before committing
-
-```sh
-cargo fmt --check
-cargo clippy --all-targets -- -D warnings
-cargo test
-```
-
-## Layout
-
-Programs live in `apps/`, libraries in `crates/`. See [ARCHITECTURE.md](ARCHITECTURE.md) for the
-full project tree and the layer rules.
-
-## Where the name appears
-
-Renaming the product means changing these, and nothing else:
-
-- `crates/brand/src/lib.rs`: display name, machine name, GitHub repository
-- `apps/chawpick-ide/`: the folder name and `name` in its `Cargo.toml`
-- `Cargo.toml`: `repository`
-- `README.md`, `AGENTS.md`, `ARCHITECTURE.md`
-
-## License
-
-Chawpick Ide — Copyright (C) 2026 Alttiplano
-
-| What | License | File |
-|---|---|---|
-| The IDE: the app and every crate, unless its `Cargo.toml` says otherwise | GPL-3.0-or-later | [LICENSE-GPL](LICENSE-GPL) |
-| Crates meant for others to reuse, marked `license = "MIT"` in their `Cargo.toml` (none yet) | MIT | [LICENSE-MIT](LICENSE-MIT) |
-
-This program is free software: you can redistribute it and/or modify it under the terms of the
-GNU General Public License as published by the Free Software Foundation, either version 3 of the
-License, or (at your option) any later version. It is distributed in the hope that it will be
-useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+<br>
