@@ -5,7 +5,7 @@
 <h1 align="center">Chawpick IDE</h1>
 
 <p>
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust">
+  <img src="https://img.shields.io/badge/Rust-100%25-2563eb?style=for-the-badge&labelColor=000000&logo=rust&logoColor=white" alt="Rust">
   <img src="https://img.shields.io/badge/egui-0.37-2563eb?style=for-the-badge&labelColor=000000" alt="egui 0.37">
   <img src="https://img.shields.io/badge/License-MIT%20%2F%20GPL--3.0-2563eb?style=for-the-badge&labelColor=000000" alt="License">
 </p>
