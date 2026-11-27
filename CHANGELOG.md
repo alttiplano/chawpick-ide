@@ -1,7 +1,6 @@
 # Changelog
 
-Follow the new features, improvements, and bug fixes of [Chawpick IDE](https://chawpick.com/ide), release by release.
-
+[Chawpick IDE](https://chawpick.com/ide) is just getting started, and you're invited to watch it take shape. Follow every new feature, improvement, and bug fix as each release brings us one step closer to the IDE we envision.
 <br>
 
 <!-- --- -->
