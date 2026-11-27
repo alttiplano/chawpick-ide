@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="32 32 448 448" width="512" height="512">
+  <!-- App icon master. Change TILE COLOUR below, or replace this file with your own 512x512 SVG,
+       then run scripts/app-icon.sh. -->
+  <defs>
+    <clipPath id="tile"><rect x="32" y="32" width="448" height="448" rx="100"/></clipPath>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
+    </linearGradient>
+    <path id="logo" fill-rule="evenodd" d="M40 14 Q45 22 50 22 Q55 22 60 14 Q64 24 72 26 Q84 29 94 40 Q80 42 66 48 Q58 52 53 58 L50 86 L47 58 Q42 52 34 48 Q20 42 6 40 Q16 29 28 26 Q36 24 40 14 Z M41.4 39 A8.6 8.6 0 1 0 58.6 39 A8.6 8.6 0 1 0 41.4 39 Z M46.6 39 A3.4 3.4 0 1 0 53.4 39 A3.4 3.4 0 1 0 46.6 39 Z"/>
+  </defs>
+  <g clip-path="url(#tile)">
+    <!-- TILE COLOUR -->
+    <rect x="32" y="32" width="448" height="448" fill="#2563EB"/>
+    <!-- grid -->
+    <path stroke="#ffffff" stroke-opacity="0.2" stroke-width="3" fill="none"
+          d="M88 32V480 M32 88H480 M144 32V480 M32 144H480 M200 32V480 M32 200H480 M256 32V480 M32 256H480 M312 32V480 M32 312H480 M368 32V480 M32 368H480 M424 32V480 M32 424H480"/>
+    <rect x="32" y="32" width="448" height="448" fill="url(#light)"/>
+  </g>
+  <!-- glyph: Chawpick logo (100x100 source, scaled 4.2x and centred) -->
+  <use href="#logo" fill="#000000" fill-opacity="0.16" transform="translate(46 54) scale(4.2)"/>
+  <use href="#logo" fill="#ffffff" transform="translate(46 46) scale(4.2)"/>
+</svg>
