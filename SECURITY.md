@@ -1,75 +1,74 @@
-# Política de seguridad
+# Security Policy
 
-Gracias por ayudar a mantener Chawpick IDE seguro. En Alttiplano nos tomamos la seguridad muy en
-serio, y agradecemos a quienes encuentran fallos y los reportan de forma responsable.
+Thanks for helping keep Chawpick IDE secure. At Alttiplano we take security very seriously, and we
+appreciate everyone who finds issues and reports them responsibly.
 
-## Importante
+## Important
 
-**No aceptamos volcados de escáneres automáticos ni reportes generados por IA sin verificar.**
-Recibimos muchos reportes inventados o sin pruebas, y no tenemos recursos para revisarlos todos.
+**We do not accept automated scanner dumps or unverified AI-generated reports.** We receive many
+made-up or unproven reports, and we don't have the resources to review them all.
 
-- Un reporte sin una prueba de concepto (PoC) que se pueda reproducir y que muestre un impacto real
-  puede cerrarse sin más revisión.
-- El spam repetido puede terminar en un bloqueo en toda la organización de Alttiplano.
+- A report without a reproducible proof of concept (PoC) that shows real impact may be closed
+  without further review.
+- Repeated spam may lead to a ban across the whole Alttiplano organization.
 
-Puedes investigar con ayuda de IA, siempre que una persona haya comprobado el hallazgo y el reporte
-incluya una PoC que funcione.
+You can use AI to help with your research, as long as a person has verified the finding and the
+report includes a working PoC.
 
-## Versiones soportadas
+## Supported versions
 
-Solo la **última release** y la rama `main` reciben arreglos de seguridad. Si usas una versión
-anterior, actualiza.
+Only the **latest release** and the `main` branch receive security fixes. If you're on an older
+version, please upgrade.
 
-## Modelo de amenazas
+## Threat model
 
-Chawpick IDE funciona en tu equipo, con tus permisos. Lee y edita los archivos que abres, y solo
-ejecuta lo que tú le pides. Abrir el proyecto de un desconocido tiene que ser seguro.
+Chawpick IDE runs on your machine, with your permissions. It reads and edits the files you open,
+and only runs what you ask it to. Opening a stranger's project has to be safe.
 
-### Lo que sí es un fallo de seguridad
+### What counts as a security issue
 
-- Abrir un archivo o una carpeta hace que se ejecute código sin que lo pidas.
-- La app lee, escribe o borra archivos fuera de lo que abriste, sin que se lo pidas.
-- Alguien consigue que la app descargue o instale algo que no publicó Alttiplano.
-- Tus datos (archivos, rutas, claves) salen de tu equipo sin tu permiso.
+- Opening a file or folder runs code without you asking.
+- The app reads, writes or deletes files outside what you opened, without you asking.
+- Someone gets the app to download or install something Alttiplano didn't publish.
+- Your data (files, paths, keys) leaves your machine without your permission.
 
-### Fuera de alcance
+### Out of scope
 
-| Categoría | Motivo |
+| Category | Reason |
 |---|---|
-| **Lo que tú ejecutas** | Los comandos, scripts o compilaciones que lanzas a propósito hacen lo que dicen |
-| **Dependencias de terceros** | Repórtalo al proyecto original, salvo que se pueda explotar a través de Chawpick IDE |
-| **Archivos enormes o malformados** | Si solo vuelven lenta la app o la cierran, es un bug normal: abre un [issue](https://github.com/alttiplano/chawpick-ide/issues/new) |
-| **Buenas prácticas que faltan** | Ajustes ausentes que no llevan a un fallo explotable |
-| **Equipo ya comprometido** | Quien ya controla tu equipo puede hacer lo mismo sin Chawpick IDE |
+| **What you run** | Commands, scripts or builds you start on purpose do what they say |
+| **Third-party dependencies** | Report it to the original project, unless it can be exploited through Chawpick IDE |
+| **Huge or malformed files** | If they only slow the app down or close it, that's a normal bug: open an [issue](https://github.com/alttiplano/chawpick-ide/issues/new) |
+| **Missing best practices** | Missing settings that don't lead to an exploitable issue |
+| **Already-compromised machine** | Someone who already controls your machine can do the same without Chawpick IDE |
 
-## Cómo reportar
+## How to report
 
-**No publiques el fallo** en issues, PRs, Discord ni redes hasta que lo hayamos revisado y
-arreglado.
+**Don't make the issue public** in issues, PRs, Discord or social media until we have reviewed and
+fixed it.
 
-Repórtalo en privado desde
-[Report a vulnerability](https://github.com/alttiplano/chawpick-ide/security/advisories/new). El
-formulario te pide un resumen, los detalles, la prueba de concepto y el impacto. Añade también:
+Report it privately through
+[Report a vulnerability](https://github.com/alttiplano/chawpick-ide/security/advisories/new). The
+form asks for a summary, details, a proof of concept and the impact. Please also add:
 
-- La versión de Chawpick IDE (o el commit) y tu sistema operativo.
-- Los archivos o funciones afectados, si los conoces.
-- Una posible solución, si la tienes.
+- Your Chawpick IDE version (or commit) and operating system.
+- The affected files or functions, if you know them.
+- A possible fix, if you have one.
 
-Quita de los logs contraseñas, rutas personales y cualquier dato privado. No ofrecemos recompensas
-económicas (*bug bounty*).
+Remove passwords, personal paths and any private data from logs. We don't offer a bug bounty.
 
-## Divulgación
+## Disclosure
 
-Seguimos una divulgación coordinada:
+We follow coordinated disclosure:
 
-1. Respondemos a tu reporte en un máximo de **5 días hábiles**.
-2. Buscamos publicar el arreglo en un máximo de **90 días**.
-3. Al publicarlo, creamos un aviso de seguridad en GitHub con tu nombre, salvo que prefieras quedar
-   en el anonimato.
+1. We reply to your report within **5 business days**.
+2. We aim to publish a fix within **90 days**.
+3. When we publish it, we create a GitHub security advisory that credits you, unless you prefer to
+   stay anonymous.
 
-Si en 5 días hábiles no has recibido respuesta, o no puedes usar el formulario, escribe a
+If you haven't heard back within 5 business days, or you can't use the form, email
 **[security@alttiplano.com](mailto:security@alttiplano.com)**.
 
 ---
 
-<sub>Mantenido por [Alttiplano](https://alttiplano.com).</sub>
+<sub>Maintained by [Alttiplano](https://alttiplano.com).</sub>

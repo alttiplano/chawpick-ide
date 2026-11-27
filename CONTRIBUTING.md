@@ -16,7 +16,7 @@ Thanks for wanting to help. This guide is short on purpose: read all of it befor
    a go-ahead before writing code.
 3. **A large refactor** → don't open a PR unless a maintainer asks for it.
 4. **Ask a question** → Discord.
-5. **Report a security issue** → email **security@alttiplano.com**. Never in a public issue.
+5. **Report a security issue** → follow [SECURITY.md](SECURITY.md). Never in a public issue.
 
 Opening a PR doesn't guarantee it gets merged. Confirming the idea first gives you the best chance.
 
