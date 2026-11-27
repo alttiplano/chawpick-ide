@@ -19,8 +19,8 @@
   <a href="public/docs/README_KO.md">한국어 🇰🇷</a> |
   <a href="public/docs/README_PT.md">Português 🇧🇷</a> |
   <a href="public/docs/README_RU.md">Русский 🇷🇺</a> |
-  <a href="public/docs/README_HI.md">हिन्दी 🇮🇳</a> |
   <a href="public/docs/README_VI.md">Tiếng Việt 🇻🇳</a> |
+  <a href="public/docs/README_HI.md">हिन्दी 🇮🇳</a> |
   <a href="public/docs/README_AR.md">العربية 🇸🇦</a><span>...</span>
 </p>
 
