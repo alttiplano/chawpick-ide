@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/alttiplano/chawpick-ide/refs/heads/main/public/github/logo.webp" alt="Chawpick IDE" width="200"/>
+<a href="https://chawpick.com/ide"><img src="../github/logo.svg" alt="Chawpick IDE" width="140"/></a>
 
 <h1 align="center">Chawpick IDE</h1>
 
