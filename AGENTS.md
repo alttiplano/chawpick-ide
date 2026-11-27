@@ -4,7 +4,7 @@ Rules for AI assistants working in this repository. `ARCHITECTURE.md` has the pr
 
 ## What this is
 
-Chawpick Ide: A desktop app built with Rust and egui. Stack: Rust + **egui/eframe 0.37**.
+Chawpick IDE: A desktop app built with Rust and egui. Stack: Rust + **egui/eframe 0.37**.
 
 ## Commands
 

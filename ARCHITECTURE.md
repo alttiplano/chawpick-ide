@@ -1,4 +1,4 @@
-# 🏗️ Chawpick Ide — Architecture
+# 🏗️ Chawpick IDE — Architecture
 
 A desktop app built with Rust and egui. Stack: Rust + **egui/eframe 0.37**.
 
