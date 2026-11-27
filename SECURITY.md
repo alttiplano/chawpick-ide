@@ -3,7 +3,7 @@
 Thanks for helping keep Chawpick IDE secure. At Alttiplano we take security very seriously, and we
 appreciate everyone who finds issues and reports them responsibly.
 
-## Important
+## ``Important``
 
 **We do not accept automated scanner dumps or unverified AI-generated reports.** We receive many
 made-up or unproven reports, and we don't have the resources to review them all.
