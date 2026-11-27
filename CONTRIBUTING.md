@@ -118,8 +118,8 @@ PRs that don't follow these rules will be closed.
 ## License
 
 By contributing, you agree that your work is published under the license of the crate you touch:
-[MIT license](LICENSE) in crates whose `Cargo.toml` says `license = "MIT"`, and
-[GPL-3.0-or-later](LICENSE-GPL) for everything else (the default).
+[GPL-3.0-or-later](LICENSE-GPL) by default, or [MIT license](LICENSE) in crates whose `Cargo.toml` says
+`license = "MIT"`.
 
 ---
 
