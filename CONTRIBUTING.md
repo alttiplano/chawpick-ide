@@ -1,69 +1,68 @@
-# Contribuir a Chawpick IDE
+# Contributing to Chawpick IDE
 
-Gracias por querer ayudar. Esta guía es corta a propósito: léela entera antes de abrir tu primer PR.
+Thanks for wanting to help. This guide is short on purpose: read all of it before opening your first PR.
 
-## Enlaces rápidos
+## Quick links
 
-- **Discord:** [discord.gg/Dx4YUqgrm9](https://discord.gg/Dx4YUqgrm9): preguntas, ideas y ayuda
-- **Issues:** [github.com/alttiplano/chawpick-ide/issues](https://github.com/alttiplano/chawpick-ide/issues/new): bugs y propuestas
-- **Arquitectura:** [ARCHITECTURE.md](ARCHITECTURE.md): cómo está organizado el código
-- **Código de conducta:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- **Discord:** [discord.gg/Dx4YUqgrm9](https://discord.gg/Dx4YUqgrm9): questions, ideas and help
+- **Issues:** [github.com/alttiplano/chawpick-ide/issues](https://github.com/alttiplano/chawpick-ide/issues/new): bugs and proposals
+- **Architecture:** [ARCHITECTURE.md](ARCHITECTURE.md): how the code is organized
+- **Code of Conduct:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
-## ¿Qué quieres hacer?
+## What do you want to do?
 
-1. **Arreglar un bug o algo pequeño** → abre un PR directamente.
-2. **Añadir una función o cambiar la interfaz** → abre primero un issue o pregunta en Discord, y
-   espera el visto bueno antes de programar.
-3. **Un refactor grande** → no abras un PR, salvo que un mantenedor te lo pida.
-4. **Hacer una pregunta** → Discord.
-5. **Reportar un fallo de seguridad** → escribe a **security@alttiplano.com**. Nunca en un issue
-   público.
+1. **Fix a bug or something small** → open a PR directly.
+2. **Add a feature or change the interface** → open an issue or ask on Discord first, and wait for
+   a go-ahead before writing code.
+3. **A large refactor** → don't open a PR unless a maintainer asks for it.
+4. **Ask a question** → Discord.
+5. **Report a security issue** → email **security@alttiplano.com**. Never in a public issue.
 
-Abrir un PR no garantiza que se fusione. Confirmar la idea antes te da las mejores opciones.
+Opening a PR doesn't guarantee it gets merged. Confirming the idea first gives you the best chance.
 
-## Lo que más aceptamos
+## What we accept most
 
-- Arreglos de bugs.
-- Mejoras de rendimiento, con números de antes y después.
-- Arreglos para un sistema concreto: Linux, Windows o macOS.
-- Documentación y traducciones.
-- Tests para código que aún no los tiene.
+- Bug fixes.
+- Performance improvements, with before and after numbers.
+- Fixes for a specific platform: Linux, Windows or macOS.
+- Documentation and translations.
+- Tests for code that doesn't have them yet.
 
-## Empezar
+## Getting started
 
-Necesitas Rust instalado con [rustup](https://rustup.rs). La versión exacta la elige solo el
-archivo `rust-toolchain.toml`.
+You need Rust installed with [rustup](https://rustup.rs). The `rust-toolchain.toml` file picks the
+exact version for you.
 
-1. Haz un [fork](https://github.com/alttiplano/chawpick-ide/fork) del repositorio.
-2. Clona tu fork y crea una rama para tu cambio a partir de `dev`:
+1. [Fork](https://github.com/alttiplano/chawpick-ide/fork) the repository.
+2. Clone your fork and create a branch for your change from `dev`:
 
 ```sh
-git clone https://github.com/TU-USUARIO/chawpick-ide.git
+git clone https://github.com/YOUR-USERNAME/chawpick-ide.git
 cd chawpick-ide
 git remote add upstream https://github.com/alttiplano/chawpick-ide.git
 git fetch upstream
-git checkout -b mi-cambio upstream/dev
+git checkout -b my-change upstream/dev
 ```
 
-### Ejecutar
+### Run
 
-**Linux**, la primera vez y después de cambiar el nombre o el icono:
+**Linux**, the first time and after changing the name or the icon:
 
 ```sh
 scripts/install-desktop.sh
 ```
 
-Arranca la app (la primera vez tarda unos minutos ⏱️):
+Start the app (the first run takes a few minutes ⏱️):
 
 ```sh
 cargo run
 ```
 
-En Windows y macOS basta con `cargo run`.
+On Windows and macOS, `cargo run` is all you need.
 
-## Antes de abrir un PR
+## Before you open a PR
 
-Estos tres comandos tienen que pasar:
+These three commands must pass:
 
 ```sh
 cargo fmt --check
@@ -71,57 +70,57 @@ cargo clippy --all-targets -- -D warnings
 cargo test
 ```
 
-- **Un tema por PR.** Si tocas varias cosas, sepáralas: un PR pequeño se revisa y se fusiona antes.
-- **Máximo 2 PRs abiertos a la vez.** Termina uno antes de empezar otro.
-- **Abre el PR contra `dev`**, nunca contra `main`.
-- **Título:** `tipo: resumen`, por ejemplo `fix: el panel izquierdo pierde su ancho`. Tipos:
-  `feat`, `fix`, `perf`, `docs`, `refactor`, `test` y `chore`.
-- **Descripción corta:** qué cambia, por qué y cómo lo probaste.
-- **Cambios visuales:** añade capturas de antes y después.
+- **One topic per PR.** If you touch several things, split them: a small PR gets reviewed and merged
+  sooner.
+- **At most 2 open PRs at a time.** Finish one before starting another.
+- **Open the PR against `dev`**, never against `main`.
+- **Title:** `type: summary`, for example `fix: left panel loses its width`. Types: `feat`, `fix`,
+  `perf`, `docs`, `refactor`, `test` and `chore`.
+- **Short description:** what changes, why, and how you tested it.
+- **Visual changes:** add before and after screenshots.
 
-Fusionamos con *squash*: tu PR entra en `dev` como un solo commit.
+We merge with *squash*: your PR lands in `dev` as a single commit.
 
-## Rendimiento
+## Performance
 
-Chawpick IDE tiene que sentirse rápido. Si tu cambio puede afectar al arranque, la escritura, el
-scroll o la memoria, mide antes y después con `cargo run --release` y pon los números en el PR.
+Chawpick IDE has to feel fast. If your change can affect startup, typing, scrolling or memory,
+measure before and after with `cargo run --release` and put the numbers in the PR.
 
-- **Nunca bloquees la ventana.** El trabajo lento (red, disco) va en un hilo aparte.
-- **Cada dependencia nueva necesita una razón.** Menos dependencias significa compilar antes y un
-  programa más ligero.
+- **Never block the window.** Slow work (network, disk) goes on a separate thread.
+- **Every new dependency needs a reason.** Fewer dependencies mean faster builds and a lighter app.
 
-## Reglas del proyecto
+## Project rules
 
-Las reglas completas están en [AGENTS.md](AGENTS.md) y [ARCHITECTURE.md](ARCHITECTURE.md). Las más
-importantes:
+The full rules are in [AGENTS.md](AGENTS.md) and [ARCHITECTURE.md](ARCHITECTURE.md). The most
+important ones:
 
-- **egui solo se usa en `crates/ui` y `apps/`.** Los demás crates no dibujan.
-- **No cambies el nombre, el icono ni la versión** (`crates/brand`, `assets/app-icon/`, `Cargo.toml`).
-  Eso lo hace el mantenedor.
+- **egui is only used in `crates/ui` and `apps/`.** The other crates don't draw.
+- **Don't change the name, the icon or the version** (`crates/brand`, `assets/app-icon/`,
+  `Cargo.toml`). The maintainer does that.
 
-## Herramientas de IA
+## AI tools
 
-Puedes usar IA para programar, pero el autor eres tú y respondes por cada línea:
+You can use AI to write code, but you are the author and you answer for every line:
 
-- **Entiende tu código.** Si no sabes explicar un cambio, no lo envíes.
-- **Escribe tú el PR y tus respuestas.** Queremos hablar contigo, no con un modelo. Si traduces con
-  IA, añade también tu texto original.
-- **Nada de bots ni agentes autónomos** abriendo PRs, issues o comentarios.
-- **Sin firmas de IA** en commits ni PRs. Borra líneas como estas antes de enviar:
+- **Understand your code.** If you can't explain a change, don't send it.
+- **Write your PR and your replies yourself.** We want to talk with you, not with a model. If you
+  translate with AI, include your original text too.
+- **No bots or autonomous agents** opening PRs, issues or comments.
+- **No AI signatures** in commits or PRs. Remove lines like these before you submit:
 
 ```
 Co-Authored-By: Claude <noreply@anthropic.com>
 🤖 Generated with Claude Code
 ```
 
-Los PRs que no cumplan estas reglas se cierran.
+PRs that don't follow these rules will be closed.
 
-## Licencia
+## License
 
-Al contribuir, aceptas que tu aporte se publique bajo la licencia del crate que tocas:
-[GPL-3.0-or-later](LICENSE-GPL) por defecto, o [MIT](LICENSE) en los crates cuyo `Cargo.toml` dice
+By contributing, you agree that your work is published under the license of the crate you touch:
+[GPL-3.0-or-later](LICENSE-GPL) by default, or [MIT](LICENSE) in crates whose `Cargo.toml` says
 `license = "MIT"`.
 
 ---
 
-<sub>Mantenido por [Alttiplano](https://alttiplano.com).</sub>
+<sub>Maintained by [Alttiplano](https://alttiplano.com).</sub>
