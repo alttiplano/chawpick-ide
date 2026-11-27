@@ -1,14 +1,6 @@
 <div align="center">
 
-<!-- LOGO PREVIEW START: keep one <img>, delete the table and these comments -->
-<table>
-  <tr>
-    <td align="center"><img src="public/github/logo.svg" alt="Chawpick IDE (svg)" width="180"/><br><sub>logo.svg</sub></td>
-    <td align="center"><img src="public/github/logo.png" alt="Chawpick IDE (png)" width="180"/><br><sub>logo.png</sub></td>
-    <td align="center"><img src="public/github/logo.webp" alt="Chawpick IDE (webp)" width="180"/><br><sub>logo.webp</sub></td>
-  </tr>
-</table>
-<!-- LOGO PREVIEW END -->
+<img src="public/github/logo.svg" alt="Chawpick IDE" width="140"/>
 
 <h1 align="center">Chawpick IDE</h1>
 
