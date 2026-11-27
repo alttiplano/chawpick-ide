@@ -1,7 +1,8 @@
 # Code of Conduct
 
-Chawpick IDE is a small open-source project. We want it to stay a place where everyone enjoys
-taking part, from first-time contributors to seasoned developers.
+Chawpick IDE is an open-source project built together with its community. However big it grows,
+we want it to stay a place where everyone enjoys taking part, from first-time contributors to
+seasoned developers.
 
 ## Standards
 
@@ -25,8 +26,8 @@ taking part, from first-time contributors to seasoned developers.
 ## Scope
 
 This applies in every project space: issues, pull requests, discussions, commits, code review,
-and any community space we open later (Discord, forums). It also applies when someone
-represents the project in public.
+our [Discord](https://discord.gg/Dx4YUqgrm9), and any community space we open later. It also
+applies when someone represents the project in public.
 
 ## Reporting
 
